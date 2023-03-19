@@ -23,3 +23,9 @@ services:
 If you want the cache to persist between container restarts, mount `/tmp/unsplash-cache` to a given directory.
 
 Instead of sending requests to `api.unsplash.com`, send them to this container instead.
+
+## Caching
+
+- Cached responses are kept for 21 days.
+- The cache cannot grow beyond 1GB.
+- The cache key size should store around 10k records
